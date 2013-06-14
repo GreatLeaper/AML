@@ -1,5 +1,4 @@
 doctype html
-== "<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->"
 == "<!--[if lt IE 7 ]> <html class=\"ie6\" lang=\"en\"> <![endif]-->"
 == "<!--[if IE 7 ]>    <html class=\"ie7\" lang=\"en\"> <![endif]-->"
 == "<!--[if IE 8 ]>    <html class=\"ie8\" lang=\"en\"> <![endif]-->"
@@ -15,14 +14,25 @@ head
   / Set the viewport width to device width for mobile
   meta name="viewport" content="width=device-width, initial-scale=1.0"
 
-  title= content_for?(:title) ? yield(:title) : "Untitled"
+  title= content_for?(:title) ? yield(:title) : "Angry Monkey Lures"
 
   = stylesheet_link_tag "application"
   = javascript_include_tag "vendor/custom.modernizr"
   = csrf_meta_tag
 
-body
+body.body
 
-  == yield
+  div.wrapper
+    div.home-header
+      =link_to(image_tag("logo_aml_long.png"), root_path)
+
+      / div.main-nav
+      /   ul
+      /     li =link_to("About", "/about")
+
+    == yield
 
   = javascript_include_tag "application"
+
+footer.footer
+  p &copy; Copyright 2013 Angry Monkey Fishing Lures LLC.

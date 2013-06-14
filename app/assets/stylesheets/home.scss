@@ -1,3 +1,5 @@
+@import "compass";
+
 @font-face {
   font-family: aml_header_font;
   src: url('fonts/BLUEHIGL.TTF');
@@ -13,13 +15,14 @@ p.customfont {
   font-size: 14px;
 }
 
-
-
-
 .body {
   font-family: aml_default_font, Verdana;
   margin: 20px;
-  background: rgb(255, 255, 255);
+
+  background-color: #e8e8e8;
+  @include filter-gradient(#e8e8e8, #cca37a, vertical);
+  @include background-image(linear-gradient(top,  #e8e8e8 0%,#8e857f 7%,#ffffff 35%,#ffffff 65%,#8e857f 93%,#cca37a 94%));
+
 }
 
 .body h1 {
@@ -28,13 +31,18 @@ p.customfont {
   font-size: 60;
  }
 
+.wrapper {
+  margin: 0 auto;
+  width: 700px;
+}
+
 .home-header {
   #background:url(header_background.jpg) !important;
   height: 260px;
   #width:1024px;
 }
 
-.home-header .home-header-center {
+.home-header {
   height:260px;
   background-repeat:no-repeat !important;
   width:1000px;
@@ -42,21 +50,21 @@ p.customfont {
   position:relative;
 }
 
-.home-header .home-header-center .main-nav{
+.home-header .main-nav{
   top:260px;
   left:10px;
   width:100%;
   float:left;
 }
-.home-header .home-header-center .main-nav ul{
+.home-header .main-nav ul{
   margin-top: 5px;
 }
-.home-header .home-header-center .main-nav ul li{
+.home-header .main-nav ul li{
   list-style:none;
   display:inline;
   padding: 10px;
 }
-.home-header .home-header-center .main-nav ul li a{
+.home-header .main-nav ul li a{
   color:#222222;
   font-size:18px;
   text-decoration:none;
@@ -64,13 +72,13 @@ p.customfont {
   text-shadow: 1px -1px 0 #aaaaaa;
 }
 
-.home-header .home-header-center .main-nav ul li a:hover{
+.home-header .main-nav ul li a:hover{
   #color:#b16565;
   color:#00000;
   text-shadow: 1px -1px 0 #00e1e1;
 }
 
-.home-header .home-header-center .login-nav {
+.home-header .login-nav {
   position: relative;
   top: 1px;
   width: 365px;
@@ -80,47 +88,35 @@ p.customfont {
   margin-right: -10px;
 }
 
-.home-header .home-header-center .login-nav ul {
+.home-header .login-nav ul {
 }
 
-.home-header .home-header-center .login-nav ul li {
+.home-header .login-nav ul li {
   list-style:none;
   display:inline;
   padding: 10px;
 }
 
-.home-header .home-header-center .login-nav ul li a {
+.home-header .login-nav ul li a {
   color:#222222;
   font-size:14px;
   text-decoration:none;
 }
 
-.logo {
-  position: absolute;
-  top:20px;
-  left:20px;
-  width:300px;
-}
-
-.basket {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-}
 
 .footer {
         background-color: #cca37a;
         text-align:center;
-        margin-top:10px;
+        margin-top:30px;
         margin-left:-20px;
         margin-right:-20px;
-        padding:4.5px 0 18px;
+        padding:4.5px 0 1px;
         border-top:2px solid #dfdfdf;
         border-top-style: groove;
 }
 
 .footer p {
-        margin:4.5px 0;
+        margin:16px 0;
         font-size:12px;
 }
 
