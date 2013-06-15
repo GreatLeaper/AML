@@ -19,9 +19,24 @@ p.customfont {
   font-family: aml_default_font, Verdana;
   margin: 20px;
 
-  background-color: #e8e8e8;
-  @include filter-gradient(#e8e8e8, #cca37a, vertical);
-  @include background-image(linear-gradient(top,  #e8e8e8 0%,#8e857f 7%,#ffffff 35%,#ffffff 65%,#8e857f 93%,#cca37a 94%));
+  background: #ffffff url("bg3.png") no-repeat top left;
+
+// background-color: #a8b8c1;
+// @include filter-gradient(#a8b8c1, #cca37a, vertical);
+// @include background-image(linear-gradient(top,  #00C1F2 0%,#eaeaea 22%,#eaeaea 75%,#ffffff 100%));
+
+// light blue sky brown bottom
+//background-color: #a8b8c1;
+//@include filter-gradient(#a8b8c1, #cca37a, vertical);
+//@include background-image(linear-gradient(top,  #00C1F2 0%,#eaeaea 22%,#eaeaea 55%,#cca37a 100%));
+
+// background-color: #8e857f;
+// @include filter-gradient(#8e857f, #cca37a, vertical);
+// @include background-image(linear-gradient(top,  #8e857f 0%,#eaeaea 15%,#eaeaea 60%,#cca37a 100%));
+
+//  background-color: #e8e8e8;
+//  @include filter-gradient(#e8e8e8, #cca37a, vertical);
+//  @include background-image(linear-gradient(top,  #e8e8e8 0%,#8e857f 7%,#ffffff 45%,#ffffff 55%,#8e857f 93%,#cca37a 94%));
 
 }
 
@@ -33,21 +48,17 @@ p.customfont {
 
 .wrapper {
   margin: 0 auto;
-  width: 700px;
+  width: 720px;
 }
 
 .home-header {
-  #background:url(header_background.jpg) !important;
-  height: 260px;
-  #width:1024px;
 }
 
-.home-header {
-  height:260px;
-  background-repeat:no-repeat !important;
-  width:1000px;
-  z-index:0;
-  position:relative;
+.content {
+ # background-color: #ffffff;
+ # margin-top: 20px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .home-header .main-nav{
@@ -105,18 +116,20 @@ p.customfont {
 
 
 .footer {
-        background-color: #cca37a;
-        text-align:center;
-        margin-top:30px;
-        margin-left:-20px;
-        margin-right:-20px;
-        padding:4.5px 0 1px;
-        border-top:2px solid #dfdfdf;
-        border-top-style: groove;
+  background-color: #000000;
+  text-align:center;
+  margin-top:30px;
+  margin-left:-20px;
+  margin-right:-20px;
+  margin-bottom:-20px;
+  padding:4.5px 0 1px;
+  border-top:2px solid #dfdfdf;
+  border-top-style: groove;
 }
 
 .footer p {
-        margin:16px 0;
-        font-size:12px;
+  margin:16px 0;
+  font-size:12px;
+  color: #ffffff;
 }
 
