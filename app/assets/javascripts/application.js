@@ -14,5 +14,3 @@
 //= require jquery_ujs
 //= require slides.jquery
 //= require home
-//= require facebook
-
