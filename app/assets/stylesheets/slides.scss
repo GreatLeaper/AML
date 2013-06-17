@@ -28,9 +28,8 @@ body {
 */
 
 #container {
-#	width:580px;
-	padding:20px;
-	left: -80px;
+	#padding:20px;
+	left: 20px;
 	position:relative;
 	z-index:0;
 }
@@ -39,6 +38,7 @@ body {
 	width:900px;
 	height:417px;
 	position:relative;
+	margin: 0 auto;
 }
 
 #tom-slider {

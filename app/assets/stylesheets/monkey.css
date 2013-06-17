@@ -1,0 +1,16 @@
+
+.kpanel {
+    margin: 20px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 21px 17px #000000;
+}
+
+#.table {
+#  border-collapse: collapse;
+#}
+
+#.table th, .table td {
+#  padding: 0;
+#}

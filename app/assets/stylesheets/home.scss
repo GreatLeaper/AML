@@ -43,20 +43,20 @@ p.customfont {
 .body h1 {
   font-family: aml_header_font, Verdana;
   font-weight: normal;
-  font-size: 60;
+  #text-decoration: underline;
  }
 
 .wrapper {
   margin: 0 auto;
-  width: 720px;
+  #width: 720px;
 }
 
 .home-header {
+  text-align: center;
+  padding: 20px;
 }
 
 .content {
- # background-color: #ffffff;
- # margin-top: 20px;
   margin: 0 auto;
   width: 100%;
 }
