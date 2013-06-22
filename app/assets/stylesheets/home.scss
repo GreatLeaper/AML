@@ -12,18 +12,15 @@
 
 p.customfont { 
   font-family: aml_default_font, Verdana;
-  font-size: 14px;
+  font-size: 18px;
+  line-height: 135%
 }
 
 .body {
   font-family: aml_default_font, Verdana;
   margin: 20px;
 
-  background: #ffffff url("bg.png") no-repeat top left;
-
-// background-color: #a8b8c1;
-// @include filter-gradient(#a8b8c1, #cca37a, vertical);
-// @include background-image(linear-gradient(top,  #00C1F2 0%,#eaeaea 22%,#eaeaea 75%,#ffffff 100%));
+  background: #ffffff url("bg.png") no-repeat bottom right;
 
 // light blue sky brown bottom
 //background-color: #a8b8c1;
@@ -34,31 +31,32 @@ p.customfont {
 // @include filter-gradient(#8e857f, #cca37a, vertical);
 // @include background-image(linear-gradient(top,  #8e857f 0%,#eaeaea 15%,#eaeaea 60%,#cca37a 100%));
 
-//  background-color: #e8e8e8;
-//  @include filter-gradient(#e8e8e8, #cca37a, vertical);
-//  @include background-image(linear-gradient(top,  #e8e8e8 0%,#8e857f 7%,#ffffff 45%,#ffffff 55%,#8e857f 93%,#cca37a 94%));
-
 }
 
 .body h1 {
   font-family: aml_header_font, Verdana;
   font-weight: normal;
   #text-decoration: underline;
- }
+}
+
+.body h2 {
+  font-weight: normal;
+  border-bottom: 2px solid #000000;
+}
 
 .wrapper {
   margin: 0 auto;
   #width: 720px;
 }
 
-.home-header {
-  text-align: center;
-  padding: 20px;
-}
-
 .content {
   margin: 0 auto;
   width: 100%;
+}
+
+.home-header {
+  text-align: center;
+  padding: 20px;
 }
 
 .home-header .main-nav{
