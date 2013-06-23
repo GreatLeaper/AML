@@ -7,6 +7,11 @@
     box-shadow: 2px 2px 21px 17px #000000;
 }
 
+.kcenter {
+  margin: 0 auto;
+  width: 85%;
+}
+
 #.table {
 #  border-collapse: collapse;
 #}

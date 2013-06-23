@@ -1,10 +1,35 @@
-div.row
-div.row
-  div.small-6.columns
-    div.panel
-      = render partial: "/shared/twitter"
-    div.panel
-      | Youtube link goes here
-  div.small-6.columns
-    div.panel
-      = render partial: "/shared/facebook_like"
+/div.kpanel.kcenter
+/  table border=1 width="100%"
+/    tr
+/      td
+/        = render partial: "/shared/twitter"
+/      td
+/        = render partial: "/shared/facebook_like"
+/      td
+/        p Youtube videos
+
+div style="width:900px;margin:0 auto;"
+  table style="width:100%"
+    tr
+      td width="33%"
+        div.kpanel
+          = render partial: "/shared/twitter"
+
+      td width="33%"
+        div.kpanel
+          = render partial: "/shared/facebook_like"
+
+      td width="33%"
+        div.kpanel
+          p YouTube Videos 490px high
+
+    tr
+      td colspan="3"
+        div.kpanel
+          center
+            table
+              tr
+                td
+                  p Contact the Angry Monkey directly:
+                td
+                  =link_to("angrymonkeylures@gmail.com", "mailto:angrymonkeylures@gmail.com")

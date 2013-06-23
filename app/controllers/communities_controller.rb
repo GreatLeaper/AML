@@ -1,6 +1,6 @@
 class CommunitiesController < ActionController::Base
   protect_from_forgery
-  layout 'home'
+  layout 'application'
 
   def index
   end

@@ -34,15 +34,14 @@ div.content
 
               h2 See Our Lures
 
-              p pic of a lure
-
-              p link to videos?
+              =image_tag("lures/DSC_1378.png", width: "200px")
+              =image_tag("lures/DSC_1378.png", width: "200px")
 
             td width="26%" align="center" valign="top"
 
               h2 About Us
 
-              =image_tag("photos/tom_1.png", size: "128x128")
+              =link_to(image_tag("photos/tom_1.png", size: "128x128"), about_path)
 
             td width="37%" align="center" valign="top"
 

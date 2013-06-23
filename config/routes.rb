@@ -18,9 +18,11 @@ Aml::Application.routes.draw do
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
 
-  resources :communities, only: [:index]
+  #resources :communities, only: [:index]
+  match 'communities/' => 'communities#index'
   resources :photos, only: [:show, :index]
-  resources :about, only: [:index]
+  #resources :about, only: [:index]
+  match 'about/' => 'about#index'
 
   # Sample resource route with options:
   #   resources :products do

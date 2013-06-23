@@ -1,7 +1,7 @@
 class AboutController < ApplicationController
 
   protect_from_forgery
-  layout 'home'
+  layout 'application'
 
   def index
   end
