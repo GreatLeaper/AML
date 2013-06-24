@@ -10,9 +10,9 @@ $(document).ready(function(){
 
   // Start the slider carousel on Tom's page
   $("#slides-tom").slides({
-    play: 6000,
+    play: 8000,
     effect: 'fade',
-    crossfade: true
+    fadeSpeed: 1800
   });
 
 });
