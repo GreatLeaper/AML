@@ -23,6 +23,7 @@ Aml::Application.routes.draw do
   resources :photos, only: [:show, :index]
   #resources :about, only: [:index]
   match 'about/' => 'about#index'
+  match 'lures/' => 'lures#index'
 
   # Sample resource route with options:
   #   resources :products do
