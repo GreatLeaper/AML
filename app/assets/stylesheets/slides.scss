@@ -73,10 +73,22 @@ body {
 */
 
 .slides_container {
-	width:854px;
+#	width:854px;
 	overflow:hidden;
 	position:relative;
 	display:none;
+}
+
+.slider_home {
+	width: 854px;
+}
+
+.slider_lure-picker {
+	width: 300;
+}
+
+.slider_color-picker {
+	width: 200;
 }
 
 /*
@@ -88,8 +100,7 @@ body {
 */
 
 .slides_container a {
-	width:854px;
-	height:371px;
+	#width:854px;  // i set it in the view
 	display:block;
 }
 
@@ -113,6 +124,36 @@ body {
 	position:absolute;
 	top:165px;
 	left:823px;
+        z-index:101;
+}
+
+#slides-lure .prev {
+	position:relative;
+	top:-80px;
+	left:-35px;
+	display:block;
+	z-index:101;
+}
+
+#slides-lure .next {
+	position:relative;
+	top:-127px;
+	left:300px;
+        z-index:101;
+}
+
+#slides-color .prev {
+	position:relative;
+	top:-80px;
+	left:-35px;
+	display:block;
+	z-index:101;
+}
+
+#slides-color .next {
+	position:relative;
+	top:-127px;
+	left:210px;
         z-index:101;
 }
 

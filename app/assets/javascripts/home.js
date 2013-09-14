@@ -15,4 +15,16 @@ $(document).ready(function(){
     fadeSpeed: 1800
   });
 
+  // Start the slider carousels on the lure design page.
+  $("#slides-lure").slides({
+    play: 0000,
+    effect: 'slide'
+  });
+
+  // Start the slider carousel on Tom's page
+  $("#slides-color").slides({
+    play: 0000,
+    effect: 'slide'
+  });
+
 });
