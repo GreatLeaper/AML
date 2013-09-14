@@ -10,6 +10,14 @@
   src: url('fonts/CFB1 American Patriot Normal.ttf');
 }
 
+a:link, a:hover {
+  color: #B114E4;
+}
+
+a:hover {
+  color: #B114E4;
+}
+
 p.customfont { 
   font-family: aml_default_font, Verdana;
   font-size: 18px;
@@ -73,7 +81,7 @@ p.customfont {
   display:inline;
   padding: 10px;
 }
-.home-header .main-nav ul li a{
+.home-header .main-nav ul li {
   color:#222222;
   font-size:18px;
   text-decoration:none;
@@ -81,7 +89,7 @@ p.customfont {
   text-shadow: 1px -1px 0 #aaaaaa;
 }
 
-.home-header .main-nav ul li a:hover{
+.home-header .main-nav ul li {
   #color:#b16565;
   color:#00000;
   text-shadow: 1px -1px 0 #00e1e1;
