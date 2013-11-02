@@ -28,6 +28,7 @@ p.customfont {
   font-family: aml_default_font, Verdana;
   margin: 20px;
 
+  //background: #ffffff url("bg.png") no-repeat bottom right;
   background: #ffffff url("bg.png") no-repeat bottom right;
 
 // light blue sky brown bottom
@@ -35,9 +36,9 @@ p.customfont {
 //@include filter-gradient(#a8b8c1, #cca37a, vertical);
 //@include background-image(linear-gradient(top,  #00C1F2 0%,#eaeaea 22%,#eaeaea 55%,#cca37a 100%));
 
-// background-color: #8e857f;
-// @include filter-gradient(#8e857f, #cca37a, vertical);
-// @include background-image(linear-gradient(top,  #8e857f 0%,#eaeaea 15%,#eaeaea 60%,#cca37a 100%));
+ background-color: #8e857f;
+ @include filter-gradient(#8e857f, #cca37a, vertical);
+ @include background-image(linear-gradient(top,  #8e857f 0%,#eaeaea 15%,#eaeaea 60%,#020B4B 100%));
 
 }
 
